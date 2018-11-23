@@ -16,7 +16,7 @@ export class CardComponentComponent implements OnInit {
     { title: 'Card 7', cols: 1, rows: 1 },
     { title: 'Card 8', cols: 1, rows: 1 },
     { title: 'Card 9', cols: 1, rows: 1 },
-    { title: 'Card 10', cols: 1, rows: 1 }
+    { title: 'Card 100000', cols: 1, rows: 1 }
   ];
   constructor() { }
 
