@@ -6,6 +6,8 @@ import { CardComponentComponent } from './card-component/card-component.componen
 import { NavbarComponentComponent } from './navbar-component/navbar-component.component';
 import { LoginComponentComponent } from './login-component/login-component.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponentComponent } from './home-component/home-component.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { FooterComponentComponent } from './footer-component/footer-component.co
     CardComponentComponent,
     NavbarComponentComponent,
     LoginComponentComponent,
-    FooterComponentComponent
+    FooterComponentComponent,
+    HomeComponentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
