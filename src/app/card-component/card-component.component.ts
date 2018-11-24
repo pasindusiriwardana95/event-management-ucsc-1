@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-card-component',
@@ -6,19 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-component.component.css']
 })
 export class CardComponentComponent implements OnInit {
-  cards = [
-    { title: 'Card 1', cols: 1, rows: 1},
-    { title: 'Card 2', cols: 1, rows: 1 },
-    { title: 'Card 3', cols: 1, rows: 1 },
-    { title: 'Card 4', cols: 1, rows: 1 },
-    { title: 'Card 5', cols: 1, rows: 1 },
-    { title: 'Card 6', cols: 1, rows: 1 },
-    { title: 'Card 7', cols: 1, rows: 1 },
-    { title: 'Card 8', cols: 1, rows: 1 },
-    { title: 'Card 9', cols: 1, rows: 1 },
-    { title: 'Card 100000', cols: 1, rows: 1 }
-  ];
-  constructor() { }
+  cards:  Observable<any[]>;
+  constructor(db: AngularFirestore) {
+    this.cards = db.collection('events_pending').valueChanges();
+  }
 
   ngOnInit() {
   }
