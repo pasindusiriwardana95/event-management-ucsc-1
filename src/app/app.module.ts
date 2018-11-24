@@ -13,6 +13,8 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AdminHeadComponentComponent } from './admin-head-component/admin-head-component.component';
+import { SidebarComponentComponent } from './sidebar-component/sidebar-component.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,9 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     NavbarComponentComponent,
     LoginComponentComponent,
     FooterComponentComponent,
-    HomeComponentComponent
+    HomeComponentComponent,
+    AdminHeadComponentComponent,
+    SidebarComponentComponent
   ],
   imports: [
     BrowserModule,
