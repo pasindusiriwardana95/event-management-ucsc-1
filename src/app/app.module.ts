@@ -15,6 +15,8 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AdminHeadComponentComponent } from './admin-head-component/admin-head-component.component';
 import { SidebarComponentComponent } from './sidebar-component/sidebar-component.component';
+import { TimeLineCompontentComponent } from './time-line-component/time-line-compontent.component';
+import { TodoListComponentComponent } from './todo-list-component/todo-list-component.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import { SidebarComponentComponent } from './sidebar-component/sidebar-component
     FooterComponentComponent,
     HomeComponentComponent,
     AdminHeadComponentComponent,
-    SidebarComponentComponent
+    SidebarComponentComponent,
+    TimeLineCompontentComponent,
+    TodoListComponentComponent
   ],
   imports: [
     BrowserModule,
