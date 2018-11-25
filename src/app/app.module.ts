@@ -17,6 +17,8 @@ import { AdminHeadComponentComponent } from './admin-head-component/admin-head-c
 import { SidebarComponentComponent } from './sidebar-component/sidebar-component.component';
 import { TimeLineCompontentComponent } from './time-line-component/time-line-compontent.component';
 import { TodoListComponentComponent } from './todo-list-component/todo-list-component.component';
+import { MonitorComponentComponent } from './monitor-component/monitor-component.component';
+import { TimeLineRouteCompontentComponent } from './time-line-route-compontent/time-line-route-compontent.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,9 @@ import { TodoListComponentComponent } from './todo-list-component/todo-list-comp
     AdminHeadComponentComponent,
     SidebarComponentComponent,
     TimeLineCompontentComponent,
-    TodoListComponentComponent
+    TodoListComponentComponent,
+    MonitorComponentComponent,
+    TimeLineRouteCompontentComponent
   ],
   imports: [
     BrowserModule,
