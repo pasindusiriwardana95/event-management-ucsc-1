@@ -19,6 +19,8 @@ import { TimeLineCompontentComponent } from './time-line-component/time-line-com
 import { TodoListComponentComponent } from './todo-list-component/todo-list-component.component';
 import { MonitorComponentComponent } from './monitor-component/monitor-component.component';
 import { TimeLineRouteCompontentComponent } from './time-line-route-compontent/time-line-route-compontent.component';
+import { NotificationComponentComponent } from './notification-component/notification-component.component';
+import { NotificationRouteComponentComponent } from './notification-route-component/notification-route-component.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +34,9 @@ import { TimeLineRouteCompontentComponent } from './time-line-route-compontent/t
     TimeLineCompontentComponent,
     TodoListComponentComponent,
     MonitorComponentComponent,
-    TimeLineRouteCompontentComponent
+    TimeLineRouteCompontentComponent,
+    NotificationComponentComponent,
+    NotificationRouteComponentComponent
   ],
   imports: [
     BrowserModule,
