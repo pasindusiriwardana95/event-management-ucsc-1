@@ -5,13 +5,15 @@ import {HomeComponentComponent} from './home-component/home-component.component'
 import {AdminHeadComponentComponent} from './admin-head-component/admin-head-component.component';
 import {TimeLineRouteCompontentComponent} from './time-line-route-compontent/time-line-route-compontent.component';
 import {NotificationRouteComponentComponent} from './notification-route-component/notification-route-component.component';
+import {LayoutCompontentComponent} from './layout-compontent/layout-compontent.component';
 
 const routes: Routes = [
   {path: 'home' , component: HomeComponentComponent},
   {path: 'login', component: LoginComponentComponent},
   {path: 'test', component: AdminHeadComponentComponent},
   {path: 'timeline', component: TimeLineRouteCompontentComponent},
-  {path: 'noti', component: NotificationRouteComponentComponent}
+  {path: 'noti', component: NotificationRouteComponentComponent},
+  {path: 'temp', component: LayoutCompontentComponent}
 ];
 
 @NgModule({

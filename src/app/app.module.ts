@@ -21,6 +21,7 @@ import { MonitorComponentComponent } from './monitor-component/monitor-component
 import { TimeLineRouteCompontentComponent } from './time-line-route-compontent/time-line-route-compontent.component';
 import { NotificationComponentComponent } from './notification-component/notification-component.component';
 import { NotificationRouteComponentComponent } from './notification-route-component/notification-route-component.component';
+import { LayoutCompontentComponent } from './layout-compontent/layout-compontent.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { NotificationRouteComponentComponent } from './notification-route-compon
     MonitorComponentComponent,
     TimeLineRouteCompontentComponent,
     NotificationComponentComponent,
-    NotificationRouteComponentComponent
+    NotificationRouteComponentComponent,
+    LayoutCompontentComponent
   ],
   imports: [
     BrowserModule,
