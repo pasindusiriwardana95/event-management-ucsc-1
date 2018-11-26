@@ -22,6 +22,8 @@ import { TimeLineRouteCompontentComponent } from './time-line-route-compontent/t
 import { NotificationComponentComponent } from './notification-component/notification-component.component';
 import { NotificationRouteComponentComponent } from './notification-route-component/notification-route-component.component';
 import { LayoutCompontentComponent } from './layout-compontent/layout-compontent.component';
+import { StudentDashComponentComponent } from './student-dash-component/student-dash-component.component';
+import { StudentDashComponentSideBarComponent } from './student-dash-component-side-bar/student-dash-component-side-bar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,9 @@ import { LayoutCompontentComponent } from './layout-compontent/layout-compontent
     TimeLineRouteCompontentComponent,
     NotificationComponentComponent,
     NotificationRouteComponentComponent,
-    LayoutCompontentComponent
+    LayoutCompontentComponent,
+    StudentDashComponentComponent,
+    StudentDashComponentSideBarComponent
   ],
   imports: [
     BrowserModule,

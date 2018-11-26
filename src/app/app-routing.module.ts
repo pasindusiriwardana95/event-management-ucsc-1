@@ -6,6 +6,7 @@ import {AdminHeadComponentComponent} from './admin-head-component/admin-head-com
 import {TimeLineRouteCompontentComponent} from './time-line-route-compontent/time-line-route-compontent.component';
 import {NotificationRouteComponentComponent} from './notification-route-component/notification-route-component.component';
 import {LayoutCompontentComponent} from './layout-compontent/layout-compontent.component';
+import {StudentDashComponentComponent} from './student-dash-component/student-dash-component.component';
 
 const routes: Routes = [
   {path: 'home' , component: HomeComponentComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'test', component: AdminHeadComponentComponent},
   {path: 'timeline', component: TimeLineRouteCompontentComponent},
   {path: 'noti', component: NotificationRouteComponentComponent},
-  {path: 'temp', component: LayoutCompontentComponent}
+  {path: 'temp', component: LayoutCompontentComponent},
+  {path: 'student-dash', component:StudentDashComponentComponent}
 ];
 
 @NgModule({
