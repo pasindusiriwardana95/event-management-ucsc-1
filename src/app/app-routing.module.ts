@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'timeline', component: TimeLineRouteCompontentComponent},
   {path: 'noti', component: NotificationRouteComponentComponent},
   {path: 'temp', component: LayoutCompontentComponent},
-  {path: 'student-dash', component:StudentDashComponentComponent}
+  {path: 'student-dash', component: StudentDashComponentComponent}
 ];
 
 @NgModule({
