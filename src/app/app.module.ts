@@ -26,6 +26,7 @@ import { StudentDashComponentComponent } from './student-dash-component/student-
 import { StudentDashComponentSideBarComponent } from './student-dash-component-side-bar/student-dash-component-side-bar.component';
 import { StudentFormComponentComponent } from './student-form-component/student-form-component.component';
 import { StudentEventComponentComponent } from './student-event-component/student-event-component.component';
+import { StudentKanbanComponentComponent } from './student-kanban-component/student-kanban-component.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +47,8 @@ import { StudentEventComponentComponent } from './student-event-component/studen
     StudentDashComponentComponent,
     StudentDashComponentSideBarComponent,
     StudentFormComponentComponent,
-    StudentEventComponentComponent
+    StudentEventComponentComponent,
+    StudentKanbanComponentComponent
   ],
   imports: [
     BrowserModule,
