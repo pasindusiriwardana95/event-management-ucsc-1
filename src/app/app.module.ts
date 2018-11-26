@@ -24,6 +24,8 @@ import { NotificationRouteComponentComponent } from './notification-route-compon
 import { LayoutCompontentComponent } from './layout-compontent/layout-compontent.component';
 import { StudentDashComponentComponent } from './student-dash-component/student-dash-component.component';
 import { StudentDashComponentSideBarComponent } from './student-dash-component-side-bar/student-dash-component-side-bar.component';
+import { StudentFormComponentComponent } from './student-form-component/student-form-component.component';
+import { StudentEventComponentComponent } from './student-event-component/student-event-component.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +44,9 @@ import { StudentDashComponentSideBarComponent } from './student-dash-component-s
     NotificationRouteComponentComponent,
     LayoutCompontentComponent,
     StudentDashComponentComponent,
-    StudentDashComponentSideBarComponent
+    StudentDashComponentSideBarComponent,
+    StudentFormComponentComponent,
+    StudentEventComponentComponent
   ],
   imports: [
     BrowserModule,

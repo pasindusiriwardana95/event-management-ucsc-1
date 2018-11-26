@@ -1,0 +1,14 @@
+.float{
+	position:fixed;
+    top: 80px;
+	right:100px;
+	background-color:#4169E1;
+	color:#FFF;
+	text-align:center;
+    box-shadow: 2px 2px 3px #999;
+    cursor: pointer;
+}
+
+.my-float{
+	margin-top:22px;
+}
