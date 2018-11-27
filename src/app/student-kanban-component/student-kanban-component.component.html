@@ -1,3 +1,53 @@
-<p>
-  student-kanban-component works!
-</p>
+<div class="row">
+  <div class="card-column">
+    <div class="card mr-5" style="width: 20rem;">
+      <div class="card-header">To Do</div>
+      <div class="card-body">
+
+        <div class="card mb-2" *ngFor="let card of toDo">
+          <div class="card-body" draggable [dragData]="card">
+            <p class="card-text">{{ card.text }}</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="card-footer">
+        <input type="text" class="form-control" placeholder="Add a card..." #inputtext (keyup.enter)="onEnter(inputtext)">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="card mr-5" style="width: 20rem;">
+      <div class="card-header">In Process</div>
+      <div class="card-body" droppable (onDrop)="onItemDrop($event)">
+
+        <div class="card mb-3" style="width: 18rem;" *ngFor="let item of inProcess">
+          <div class="card-body" draggable [dragData]="item">
+            <p class="card-text">{{ item.text }}</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="card" style="width: 20rem;">
+      <div class="card-header">Done</div>
+      <div class="card-body" droppable (onDrop)="onItemDrop2($event)">
+
+        <div class="card mb-3" style="width: 18rem;" *ngFor="let item of done">
+          <div class="card-body" draggable [dragData]="item">
+            <p class="card-text">{{ item.text }}</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div>

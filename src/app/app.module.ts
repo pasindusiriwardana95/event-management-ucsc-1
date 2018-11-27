@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgDragDropModule } from 'ng-drag-drop';
 
 import { AppComponent } from './app.component';
 import { CardComponentComponent } from './card-component/card-component.component';
@@ -56,7 +57,8 @@ import { StudentKanbanComponentComponent } from './student-kanban-component/stud
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    NgDragDropModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
