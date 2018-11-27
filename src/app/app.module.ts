@@ -27,13 +27,12 @@ import { StudentDashComponentComponent } from './student-dash-component/student-
 import { StudentDashComponentSideBarComponent } from './student-dash-component-side-bar/student-dash-component-side-bar.component';
 import { StudentFormComponentComponent } from './student-form-component/student-form-component.component';
 import { StudentEventComponentComponent } from './student-event-component/student-event-component.component';
-<<<<<<< HEAD
 import { StudentKanbanComponentComponent } from './student-kanban-component/student-kanban-component.component';
-=======
 import { RegComponentComponent } from './reg-component/reg-component.component';
 import { RegComponentLecComponent } from './reg-component-lec/reg-component-lec.component';
 import { PopUpComponentComponent } from './pop-up-component/pop-up-component.component';
->>>>>>> upstream/master
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,13 +54,10 @@ import { PopUpComponentComponent } from './pop-up-component/pop-up-component.com
     StudentDashComponentSideBarComponent,
     StudentFormComponentComponent,
     StudentEventComponentComponent,
-<<<<<<< HEAD
-    StudentKanbanComponentComponent
-=======
+    StudentKanbanComponentComponent,
     RegComponentComponent,
     RegComponentLecComponent,
-    PopUpComponentComponent
->>>>>>> upstream/master
+    PopUpComponentComponent,
   ],
   imports: [
     BrowserModule,
