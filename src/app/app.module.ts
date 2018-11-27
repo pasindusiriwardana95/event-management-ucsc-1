@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgDragDropModule } from 'ng-drag-drop';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CardComponentComponent } from './card-component/card-component.component';
@@ -66,7 +68,9 @@ import { PopUpComponentComponent } from './pop-up-component/pop-up-component.com
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
-    NgDragDropModule.forRoot()
+    NgDragDropModule.forRoot(),
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
