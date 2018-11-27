@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {NgDragDropModule} from 'ng-drag-drop';
 import { AppComponent } from './app.component';
 import { CardComponentComponent } from './card-component/card-component.component';
 import { NavbarComponentComponent } from './navbar-component/navbar-component.component';
@@ -29,6 +29,10 @@ import { StudentEventComponentComponent } from './student-event-component/studen
 import { RegComponentComponent } from './reg-component/reg-component.component';
 import { RegComponentLecComponent } from './reg-component-lec/reg-component-lec.component';
 import { PopUpComponentComponent } from './pop-up-component/pop-up-component.component';
+import {FormsModule} from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms';
+import {StudentKanbanComponentComponent} from './student-kanban-component/student-kanban-component.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +56,8 @@ import { PopUpComponentComponent } from './pop-up-component/pop-up-component.com
     StudentEventComponentComponent,
     RegComponentComponent,
     RegComponentLecComponent,
-    PopUpComponentComponent
+    PopUpComponentComponent,
+    StudentKanbanComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +65,10 @@ import { PopUpComponentComponent } from './pop-up-component/pop-up-component.com
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgDragDropModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
