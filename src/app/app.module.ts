@@ -29,6 +29,9 @@ import { StudentEventComponentComponent } from './student-event-component/studen
 import { RegComponentComponent } from './reg-component/reg-component.component';
 import { RegComponentLecComponent } from './reg-component-lec/reg-component-lec.component';
 import { PopUpComponentComponent } from './pop-up-component/pop-up-component.component';
+import {FormsModule} from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,7 +63,9 @@ import { PopUpComponentComponent } from './pop-up-component/pop-up-component.com
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
