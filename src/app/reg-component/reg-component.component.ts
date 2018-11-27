@@ -30,7 +30,7 @@ export class RegComponentComponent implements OnInit {
       soc_venue: ['', Validators.required],
       soc_est_date: ['', Validators.required],
       soc_ic_name: ['', Validators.required],
-      soc_ic_email: ['', Validators.required, Validators.email],
+      soc_ic_email: ['', [Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')]]
     });
   }
 

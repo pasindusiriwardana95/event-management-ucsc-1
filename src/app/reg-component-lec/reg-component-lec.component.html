@@ -2,33 +2,38 @@
 <br><br><br>
 <div class="modal-body">
   <div class="container">
-    <form>
+    <form [formGroup]="lecturerReg" (ngSubmit)="submitLecturerData()">
       <div class="form-group">
         <label>First Name</label>
-        <input type="text" class="form-control" id="fn" placeholder="First Name">
+        <input type="text" class="form-control" formControlName="firstname" id="fn" placeholder="First Name" required>
       </div>
       <div class="form-group">
         <label>Last Name</label>
-        <input type="text" class="form-control" id="ls" placeholder="Last Name">
+        <input type="text" class="form-control" formControlName="lastname" id="ls" placeholder="Last Name">
       </div>
       <div class="form-group">
         <label>User Name</label>
-        <input type="text" class="form-control" id="uname" placeholder="user name">
+        <input type="text" class="form-control" formControlName="username" id="uname" placeholder="user name" required>
       </div>
       <div class="form-group">
         <label>Password</label>
-        <input type="password" class="form-control" id="ps" placeholder="password">
+        <input type="password" class="form-control" formControlName="password" id="ps" placeholder="password" required>
+      </div>
+      <div class="form-group">
+        <label>Comfirm Password</label>
+        <input type="password" class="form-control" formControlName="cpassword" id="cps" placeholder="confirm password"
+          required>
       </div>
       <div class="form-group">
         <label>Email</label>
-        <input type="text" class="form-control" id="email" placeholder="email">
+        <input type="text" class="form-control" formControlName="email" id="email" placeholder="email" required>
       </div>
       <div class="form-group">
         <label>Description</label>
-        <textarea class="form-control" id="dis" rows="3"></textarea>
+        <textarea class="form-control" id="dis" formControlName="description" rows="3" required></textarea>
       </div>
       <div class="modal-footer mt-3">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="reset" class="btn btn-danger" data-dismiss="modal">Clear</button>
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </form>
