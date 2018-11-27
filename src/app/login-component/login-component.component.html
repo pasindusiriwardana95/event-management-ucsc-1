@@ -1,15 +1,14 @@
 <br>
 <br>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <div class="login-form">
-  <form [formGroup] = "login_form_one" (ngSubmit)="printData()">
+  <form [formGroup]="loginform" (ngSubmit)="login()">
     <div class="avatar"><i class="material-icons">&#xE7FF;</i></div>
     <h4 class="modal-title">Login to Your Account</h4>
     <div class="form-group">
-      <input type="text" class="form-control" formControl="username" placeholder="Username" required="required" >
+      <input type="text" class="form-control" formControlName="username" placeholder="Username" required>
     </div>
     <div class="form-group">
-      <input type="password" class="form-control" formControl="password" placeholder="Password" required="required" >
+      <input type="password" class="form-control" formControlName="password" placeholder="Password" required>
     </div>
     <div class="form-group small clearfix">
       <label class="checkbox-inline"><input type="checkbox"> Remember me</label>
@@ -34,12 +33,12 @@
         </button>
       </div>
       <div class="modal-body text-center">
-          <a class="btn mr-3" routerLink="/reg2" role="button" 
-          style="background-color: #5972BA; color: #FFFFFF" data-dismiss="modal">Register as Lecturer</a>
-          
-          <a class="btn" routerLink="/reg" role="button" 
-          style="background-color: #5972BA; color: #FFFFFF" data-dismiss="modal">Register as a Society</a>
-          
+        <a class="btn mr-3" routerLink="/reg2" role="button" style="background-color: #5972BA; color: #FFFFFF"
+          data-dismiss="modal">Register as Lecturer</a>
+
+        <a class="btn" routerLink="/reg" role="button" style="background-color: #5972BA; color: #FFFFFF" data-dismiss="modal">Register
+          as a Society</a>
+
       </div>
       <div class="modal-footer">
       </div>
