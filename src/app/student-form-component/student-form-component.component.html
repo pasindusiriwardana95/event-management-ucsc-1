@@ -25,34 +25,34 @@
 
         <!-- Modal Body -->
         <div class="modal-body">
-          <form>
+          <form [formGroup]="eventCreateForm" (ngSubmit)="submitEventCard()">
             <div class="form-group">
               <label for="even_name">Event name</label>
-              <input type="text" class="form-control" id="even_name" placeholder="Event name">
+              <input type="text" class="form-control" id="even_name" formControlName="eventname" placeholder="Event name">
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Description</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="description"></textarea>
             </div>
             <div class="form-group">
               <label for="venue">Venue</label>
-              <input type="text" class="form-control" id="venue" placeholder="Venue">
+              <input type="text" class="form-control" formControlName="venue" id="venue" placeholder="Venue">
             </div>
             <div class="form-group">
               <label for="date">Date</label>
-              <input class="form-control" type="datetime-local" value="2018-08-19T13:00:00" id="example-datetime-local-input">
+              <input class="form-control" type="datetime-local" formControlName="date" value="2018-08-19T13:00:00" id="example-datetime-local-input">
             </div>
             <div class="form-group">
               <label for="resources">Resources</label>
-              <textarea class="form-control" id="resources" rows="3"></textarea>
+              <textarea class="form-control" formControlName="resources" id="resources" rows="3"></textarea>
             </div>
             <div class="form-group">
               <label for="ic_name">In-charge Name</label>
-              <input type="text" class="form-control" id="ic_name" placeholder="Name">
+              <input type="text" class="form-control" formControlName="nameofic" id="ic_name" placeholder="Name">
             </div>
             <div class="form-group">
               <label for="ic_mail">In-charge Mail</label>
-              <input type="email" class="form-control" id="ic_mail" placeholder="E Mail">
+              <input type="email" class="form-control" formControlName="mailofic" id="ic_mail" placeholder="E Mail">
             </div>
             <!-- Modal Footer -->
             <div class="modal-footer mt-3">
