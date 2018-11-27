@@ -4,6 +4,7 @@ import { NgDragDropModule } from 'ng-drag-drop';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
 import { AppComponent } from './app.component';
 import { CardComponentComponent } from './card-component/card-component.component';
 import { NavbarComponentComponent } from './navbar-component/navbar-component.component';
@@ -29,11 +30,10 @@ import { StudentDashComponentComponent } from './student-dash-component/student-
 import { StudentDashComponentSideBarComponent } from './student-dash-component-side-bar/student-dash-component-side-bar.component';
 import { StudentFormComponentComponent } from './student-form-component/student-form-component.component';
 import { StudentEventComponentComponent } from './student-event-component/student-event-component.component';
-import { StudentKanbanComponentComponent } from './student-kanban-component/student-kanban-component.component';
 import { RegComponentComponent } from './reg-component/reg-component.component';
 import { RegComponentLecComponent } from './reg-component-lec/reg-component-lec.component';
 import { PopUpComponentComponent } from './pop-up-component/pop-up-component.component';
-
+import {StudentKanbanComponentComponent} from './student-kanban-component/student-kanban-component.component';
 
 @NgModule({
   declarations: [
@@ -56,10 +56,10 @@ import { PopUpComponentComponent } from './pop-up-component/pop-up-component.com
     StudentDashComponentSideBarComponent,
     StudentFormComponentComponent,
     StudentEventComponentComponent,
-    StudentKanbanComponentComponent,
     RegComponentComponent,
     RegComponentLecComponent,
     PopUpComponentComponent,
+    StudentKanbanComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -68,9 +68,9 @@ import { PopUpComponentComponent } from './pop-up-component/pop-up-component.com
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
-    NgDragDropModule.forRoot(),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgDragDropModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

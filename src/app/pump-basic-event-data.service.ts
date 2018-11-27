@@ -6,9 +6,10 @@ import { AngularFirestore } from '@angular/fire/firestore';
   providedIn: 'root'
 })
 export class PumpBasicEventDataService {
-  constructor(db: AngularFirestore) { }
+  private db: AngularFirestore;
+  constructor() { }
 
   getEventsOpen(): Observable<any[]> {
-      return db.collection('events_pending').valueChanges();
+      return this.db.collection('events_pending').valueChanges();
   }
 }
