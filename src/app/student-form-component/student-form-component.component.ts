@@ -8,8 +8,6 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class StudentFormComponentComponent implements OnInit {
 
-  eventCreateForm: FormGroup;
-
   constructor() { }
 
   ngOnInit() {
