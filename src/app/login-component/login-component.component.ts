@@ -32,7 +32,7 @@ export class LoginComponentComponent implements OnInit {
           this.router.navigate(['/test']);
         } else if(x.tag == 'soc'){
           console.log(x.tag);
-          this.router.navigate(['/test']);
+          this.router.navigate(['/student-dash']);
         }
       }
     }));

@@ -15,11 +15,16 @@ export class RegComponentComponent implements OnInit {
   constructor(public db: AngularFirestore) { }
 
   ngOnInit() {
-    // this.servicename.GetSocList();
   }
-  push_reg_society(societyname, username, password, dis, es_date= '', incharg, email): void {
+  
+  push_reg_society(societyname, username, password, cpassword, dis, es_date= '', incharg, email): void {
+    if(password === cpassword){
     this.db.collection('societies').add({'society_name': societyname, 'username': username, 'dis': dis,
       'es_date': es_date, 'incharge': incharg, 'in_charg_e_mail': email});
     this.db.collection('auth_table').add({'user_name': username, 'society_name': societyname, 'pasword': password, 'tag': 'soc'});
+    } else{
+      console.log("Password mismatch");
+      alert("Password mismatch");
+    }
   }
 }
