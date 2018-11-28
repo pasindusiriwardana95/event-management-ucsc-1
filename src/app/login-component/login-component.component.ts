@@ -16,6 +16,6 @@ export class LoginComponentComponent implements OnInit {
   }
   pushData(email: String, password: String) {
   console.log(email + ' ' + password);
-    const itemRef = this.db.collection('username').add({'a' : 1});
+    const itemRef = this.db.collection('username').add({email : password});
   }
 }

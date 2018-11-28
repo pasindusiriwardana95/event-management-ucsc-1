@@ -13,8 +13,6 @@ export class CardComponentComponent implements OnInit {
   constructor(db: AngularFirestore) {
     this.cards = db.collection('events_pending').valueChanges();
   }
-
   ngOnInit() {
   }
-
 }
