@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup, Validators, FormBuilder} from '@angular/forms';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
+import * as firebase from 'firebase';
+import {AngularFirestore} from '@angular/fire/firestore';
+import {AngularFireDatabase} from '@angular/fire/database';
+
 
 @Component({
   selector: 'app-login-component',
@@ -7,43 +11,11 @@ import {FormGroup, Validators, FormBuilder} from '@angular/forms';
   styleUrls: ['./login-component.component.css']
 })
 export class LoginComponentComponent implements OnInit {
-  loginform: FormGroup;
-
-  constructor(
-
-    // public servicename: SERVICE,
-    public fb: FormBuilder // Form Builder service for Reactive forms
-
-  ) { }
-
+  constructor(public db: AngularFirestore) {}
   ngOnInit() {
-    // this.servicename.GetSocList();
-    this.loginForm();
   }
-
-  loginForm(){
-    this.loginform = this.fb.group({
-      username: ['', Validators.required],
-      password: ['', Validators.required]
-    });
+  pushData(email: String, password: String) {
+  console.log(email + ' ' + password);
+    const itemRef = this.db.collection('username').add({'a' : 1});
   }
-
-  get username() {
-    return this.loginform.get('username');
-  }
-
-  get password() {
-    return this.loginform.get('password');
-  }
-
-  // Reset socity form's values
-  ResetForm() {
-    this.loginform.reset();
-  } 
-
-  login() {
-    console.log(this.loginform.value);
-    // this.servicename.AddSociety(this.lecturerReg.value);
-    this.ResetForm();  // Reset form when clicked on reset button
-  };
 }

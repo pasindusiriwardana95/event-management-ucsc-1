@@ -68,19 +68,14 @@ export class RegComponentComponent implements OnInit {
   get icEmail() {
     return this.societyReg.get('soc_ic_email');
   }
-
   // Reset socity form's values
   ResetForm() {
     this.societyReg.reset();
-  } 
-
+  }
   submitSocietyData() {
     console.log(this.societyReg.value);
     // this.servicename.AddSociety(this.societyReg.value);
+   // firebase.database().ref().push({'first_name': this.societyReg.value});
     this.ResetForm();  // Reset form when clicked on reset button
-  };
-
-
-
-
+  }
 }
