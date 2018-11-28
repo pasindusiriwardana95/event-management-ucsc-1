@@ -25,34 +25,34 @@
 
         <!-- Modal Body -->
         <div class="modal-body">
-          <form [formGroup]="eventCreateForm" (ngSubmit)="submitEventCard()">
+          <form>
             <div class="form-group">
               <label for="even_name">Event name</label>
-              <input type="text" class="form-control" id="even_name" [(ngModel)]="eventname" placeholder="Event name">
+              <input type="text" class="form-control" id="even_name" [(ngModel)]="eventname" placeholder="Event name" [ngModelOptions]="{standalone: true}">
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Description</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="description"></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="description" [ngModelOptions]="{standalone: true}" ></textarea>
             </div>
             <div class="form-group">
               <label for="venue">Venue</label>
-              <input type="text" class="form-control" [(ngModel)]="venue" id="venue" placeholder="Venue">
+              <input type="text" class="form-control" [(ngModel)]="venue" id="venue" placeholder="Venue" [ngModelOptions]="{standalone: true}" >
             </div>
             <div class="form-group">
               <label for="date">Date</label>
-              <input class="form-control" type="datetime-local" [(ngModel)]="date" value="2018-08-19T13:00:00" id="example-datetime-local-input">
+              <input class="form-control" type="datetime-local" [(ngModel)]="date" value="2018-08-19T13:00:00" id="example-datetime-local-input" [ngModelOptions]="{standalone: true}">
             </div>
             <div class="form-group">
               <label for="resources">Resources</label>
-              <textarea class="form-control" [(ngModel)]="resources" id="resources" rows="3"></textarea>
+              <textarea class="form-control" [(ngModel)]="resources" id="resources" rows="3" [ngModelOptions]="{standalone: true}" ></textarea>
             </div>
             <div class="form-group">
               <label for="ic_name">In-charge Name</label>
-              <input type="text" class="form-control" [(ngModel)]="nameofic" id="ic_name" placeholder="Name">
+              <input type="text" class="form-control" [(ngModel)]="nameofic" id="ic_name" placeholder="Name" [ngModelOptions]="{standalone: true}" >
             </div>
             <div class="form-group">
               <label for="ic_mail">In-charge Mail</label>
-              <input type="email" class="form-control" [(ngModel)]="mailofic" id="ic_mail" placeholder="E Mail">
+              <input type="email" class="form-control" [(ngModel)]="mailofic" id="ic_mail" placeholder="E Mail" [ngModelOptions]="{standalone: true}" >
             </div>
             <!-- Modal Footer -->
             <div class="modal-footer mt-3">
