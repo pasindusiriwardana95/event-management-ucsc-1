@@ -10,6 +10,7 @@ import {StudentDashComponentComponent} from './student-dash-component/student-da
 import {RegComponentComponent} from './reg-component/reg-component.component';
 import {RegComponentLecComponent} from './reg-component-lec/reg-component-lec.component';
 import {PopUpComponentComponent} from './pop-up-component/pop-up-component.component';
+import {StudentNotiComponent} from './student-noti/student-noti.component';
 
 const routes: Routes = [
   {path: 'home' , component: HomeComponentComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path: 'student-dash', component: StudentDashComponentComponent},
   {path: 'reg', component: RegComponentComponent},
   {path: 'reg2', component: RegComponentLecComponent},
-  {path: 'pop', component: PopUpComponentComponent}
+  {path: 'pop', component: PopUpComponentComponent},
+  {path: 's-noti', component: StudentNotiComponent}
 ];
 
 @NgModule({

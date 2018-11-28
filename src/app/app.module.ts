@@ -32,6 +32,7 @@ import { RegComponentComponent } from './reg-component/reg-component.component';
 import { RegComponentLecComponent } from './reg-component-lec/reg-component-lec.component';
 import { PopUpComponentComponent } from './pop-up-component/pop-up-component.component';
 import {StudentKanbanComponentComponent} from './student-kanban-component/student-kanban-component.component';
+import { StudentNotiComponent } from './student-noti/student-noti.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import {StudentKanbanComponentComponent} from './student-kanban-component/studen
     RegComponentComponent,
     RegComponentLecComponent,
     PopUpComponentComponent,
-    StudentKanbanComponentComponent
+    StudentKanbanComponentComponent,
+    StudentNotiComponent
   ],
   imports: [
     BrowserModule,
