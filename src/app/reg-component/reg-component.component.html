@@ -8,8 +8,8 @@
                required [ngModelOptions]="{standalone: true}" >
       </div>
       <div class="form-group">
-        <label>User Name</label>
-        <input type="text" class="form-control" [(ngModel)]="soc_username" id="uname" placeholder="Your User Name Should be equal to Society Name"
+        <label>email</label>
+        <input type="text" class="form-control" [(ngModel)]="soc_email" id="uname" placeholder="Society email"
                required [ngModelOptions]="{standalone: true}" >
       </div>
       <div class="form-group">
@@ -37,7 +37,7 @@
       </div>
       <div class="modal-footer mt-3">
         <button type="reset" class="btn btn-danger" data-dismiss="modal">Clear</button>
-        <button type="reset" (click)="push_reg_society(society_name,soc_username,soc_password,soc_description,soc_est_date,soc_ic_name,soc_ic_email)" class="btn btn-primary">Submit</button>
+        <button type="reset" (click)="push_reg_society(society_name,soc_email,soc_password,soc_description,soc_est_date,soc_ic_name,soc_ic_email)" class="btn btn-primary">Submit</button>
       </div>
     </form>
   </div>

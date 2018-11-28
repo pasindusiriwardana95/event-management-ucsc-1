@@ -25,17 +25,16 @@ export class LoginComponentComponent implements OnInit {
   pushData(email: String, password: String) {
     console.log(email + ' ' + password);
     this.users = this.db.collection('auth_table').valueChanges();
-    this.users.subscribe(res=> res.forEach(x=> {
-      if(x.email == email.toString() && x.pasword==password.toString()){
-        if(x.tag == 'lec'){
+    this.users.subscribe(res => res.forEach(x => {
+      if (x.email == email.toString() && x.pasword == password.toString()) {
+        if (x.tag == 'lec') {
           console.log(x.tag);
           this.router.navigate(['/test']);
-        } else if(x.tag == 'soc'){
+        } else if (x.tag == 'soc') {
           console.log(x.tag);
           this.router.navigate(['/test']);
         }
       }
     }));
   }
-     
 }
