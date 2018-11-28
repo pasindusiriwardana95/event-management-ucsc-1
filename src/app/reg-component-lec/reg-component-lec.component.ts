@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { AngularFirestore } from '@angular/fire/firestore';
+import {PumpFrebaseService} from '../pump-frebase.service';
+import {AngularFirestore} from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-reg-component-lec',
@@ -14,6 +15,11 @@ export class RegComponentLecComponent implements OnInit {
   constructor(public db: AngularFirestore) { }
 
   ngOnInit() {
+    // this.servicename.GetSocList();
   }
-
+  push_reg_lec(firstname, lastname, password, email , username, dis): void {
+    this.db.collection('lectures').add({'user_name': username, 'firstname': firstname, 'lastname': lastname,
+      'email': email, 'dis': dis});
+    this.db.collection('auth_table').add({'user_name': username, 'email': email, 'pasword': password, 'tag': 'lec'});
+  }
 }

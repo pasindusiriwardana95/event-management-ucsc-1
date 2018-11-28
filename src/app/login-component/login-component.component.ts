@@ -14,7 +14,6 @@ export class LoginComponentComponent implements OnInit {
   constructor(public db: AngularFirestore) {}
   ngOnInit() {
   }
-  
   pushData(email: String, password: String) {
   console.log(email + ' ' + password);
     const itemRef = this.db.collection('username').add({email : password});
