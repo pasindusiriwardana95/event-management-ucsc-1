@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import * as firebase from 'firebase';
+import {AngularFirestore} from '@angular/fire/firestore';
+import {AngularFireDatabase} from '@angular/fire/database';
+
 
 @Component({
   selector: 'app-login-component',
@@ -7,14 +11,11 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
   styleUrls: ['./login-component.component.css']
 })
 export class LoginComponentComponent implements OnInit {
-  login_form_one = new FormGroup({
-    username: new FormControl(),
-    password: new FormControl()
-  });
-  constructor() { }
+  constructor(public db: AngularFirestore) {}
   ngOnInit() {
   }
-  printData() {
-    console.log(this.login_form_one.value);
+  pushData(email: String, password: String) {
+  console.log(email + ' ' + password);
+    const itemRef = this.db.collection('username').add({'a' : 1});
   }
 }
