@@ -33,6 +33,7 @@ import { RegComponentLecComponent } from './reg-component-lec/reg-component-lec.
 import { PopUpComponentComponent } from './pop-up-component/pop-up-component.component';
 import {StudentKanbanComponentComponent} from './student-kanban-component/student-kanban-component.component';
 import { StudentNotiComponent } from './student-noti/student-noti.component';
+import { WallComponent } from './wall/wall.component';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { StudentNotiComponent } from './student-noti/student-noti.component';
     RegComponentLecComponent,
     PopUpComponentComponent,
     StudentKanbanComponentComponent,
-    StudentNotiComponent
+    StudentNotiComponent,
+    WallComponent
   ],
   imports: [
     BrowserModule,
