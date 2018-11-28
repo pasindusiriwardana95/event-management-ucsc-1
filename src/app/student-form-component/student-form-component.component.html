@@ -25,7 +25,7 @@
 
         <!-- Modal Body -->
         <div class="modal-body">
-          <form [formGroup]="eventCreateForm" (ngSubmit)="submitEventCard()">
+          <form>
             <div class="form-group">
               <label for="even_name">Event name</label>
               <input type="text" class="form-control" id="even_name" [(ngModel)]="eventname" placeholder="Event name">
@@ -57,7 +57,7 @@
             <!-- Modal Footer -->
             <div class="modal-footer mt-3">
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="clear" class="btn btn-primary">Submit</button>
             </div>
 
           </form>
