@@ -34,6 +34,7 @@ import { PopUpComponentComponent } from './pop-up-component/pop-up-component.com
 import {StudentKanbanComponentComponent} from './student-kanban-component/student-kanban-component.component';
 import { StudentNotiComponent } from './student-noti/student-noti.component';
 import { WallComponent } from './wall/wall.component';
+import { StudentNotiRouteComponent } from './student-noti-route/student-noti-route.component';
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import { WallComponent } from './wall/wall.component';
     PopUpComponentComponent,
     StudentKanbanComponentComponent,
     StudentNotiComponent,
-    WallComponent
+    WallComponent,
+    StudentNotiRouteComponent
   ],
   imports: [
     BrowserModule,
